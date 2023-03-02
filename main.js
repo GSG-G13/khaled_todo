@@ -1,6 +1,6 @@
 add= () =>{
     const input = document.querySelector(".input")
-   const lis = document.getElementById("list")
+   const list = document.getElementById("list")
     if(input.value.trim() !== ""){ 
         let text =input.value;
 
@@ -9,18 +9,20 @@ add= () =>{
      newdiv.id="mc";
      newdiv.innerHTML=`${text}`;
 
-     let del=document.createElement('span')
-     del.id="def"
-     del.innerText="✘";
+     let remove= document.createElement('span')
+     remove.id="def"
+     remove.innerText="✘";
 
      let tic=document.createElement('span')
      tic.id="tic"
      tic.innerText="✓";
 
-     lis.appendChild(newdiv)
-     lis.appendChild(del)
-     lis.appendChild(tic)
+     list.appendChild(newdiv)
+     list.appendChild(remove)
+     list.appendChild(tic)
+
      input.value="";
+
      tic.addEventListener('click',function(){
         if(newdiv.classList.contains("strike")){
            
@@ -29,10 +31,10 @@ add= () =>{
         else{
          newdiv.classList.add('strike')}
     })
-     del.addEventListener('click',function(){
-        lis.removeChild(newdiv)
-        lis.removeChild(del)
-        lis.removeChild(tic)
+     remove.addEventListener('click',function(){
+        list.removeChild(newdiv)
+        list.removeChild(remove)
+        list.removeChild(tic)
         
     })}
 else{
