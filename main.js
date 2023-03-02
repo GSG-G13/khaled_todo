@@ -5,7 +5,7 @@ add= () =>{
         let text =input.value;
 
      let newdiv = document.createElement('div')
-     newdiv.className="div-from-js";
+     newdiv.className="div-from-js width80";
      newdiv.id="mc";
      newdiv.innerHTML=`${text}`;
 
@@ -44,7 +44,8 @@ else{
     input.style.borderColor='red';
    }, 300); 
    setTimeout(() => {
-    input.style.borderColor=' rgb(80, 79, 79)';
+    input.style.borderColor='rgb(80, 79, 79)';
+    alert('Pleas Inter Task.')
    }, 3000); 
 }
 }
