@@ -11,6 +11,7 @@ add= () =>{
 
      let remove= document.createElement('span')
      remove.id="def"
+    //  remove.className = "width80"
      remove.innerText="✘";
 
      let tic=document.createElement('span')

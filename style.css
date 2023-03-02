@@ -123,32 +123,30 @@ path {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width: 100%;
+    width: 80%;
     padding: 0%;
-    /* border:1pt solid black;*/ position: absolute;top:22% ; 
-  
+    position: absolute;
+    top:22% ; 
 }   
 #def{
   position:relative;
-  left: 40%;
+  left: 35%;
   bottom:37px;
   cursor: pointer;
   transition: var(--main-duration);
   font-size: 23px;
-  color: #282a31;
-  
+  color: var(--secondary-color);
   
 }
 #def:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     color: red;
 }
 
 #tic{
     transition: var(--main-duration);
     cursor: pointer;
-    color: #282a31;
+    color: var(--secondary-color);
     font-weight: 900;
     font-size: 25px;
     position:relative;
@@ -158,7 +156,6 @@ path {
 #tic:hover{
     transform: scale(1.3);
     color: #0ce90c;
-    
 }
 .strike{
 text-decoration: line-through;
