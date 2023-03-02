@@ -1,0 +1,179 @@
+ section.app{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('HenriPrestes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ section.app::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://pngimg.com/uploads/rain/rain_PNG13468.png');
+    animation: rain 0.19s ease-in infinite;
+ }
+ 
+ @keyframes rain{
+    0%{
+       background-position: 10 0;
+    }
+    100%{
+       background-position: 20% 80%;
+    }
+ }
+.glass {
+    background: linear-gradient(
+      135deg, 
+     rgba(0, 138, 251, 0.621) ,
+       rgba(112, 150, 232, 0.07),
+      rgba(51, 0, 255, 0)
+     
+     
+    );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* border: 1px solid rgba(225, 225, 225, 0.18); */
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.17);
+  }
+.contianer .section{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width:90%;
+    height: 80%;
+    border-radius: 20px;  overflow: hidden; overflow: scroll;
+  
+}
+@media screen and (max-width: 600px){
+    .contianer .section{
+        width: 90%;
+        height: 80%;
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.838);
+    border-radius: 15px 15px 0 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    transition: var(--main-duration) ease;
+    border-bottom: 4px solid var(--secondary-color);
+}
+.input::placeholder{
+    color: var(--secondary-color);
+}
+.input:focus{
+    border-bottom: 4px solid var(--main-color) !important;
+}
+.selected:focus{
+    border-bottom: 4px solid yellow;
+}
+.input-container{
+    display: flex;
+    position: absolute;
+    bottom:86%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+span.plus{
+    position:absolute;
+    left:80%;
+    color: #282a31;    
+    transition: var(--main-duration) ease;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    span.plus{
+        left: 70%;
+    }
+}
+@media screen and (max-width: 400px){
+    span.plus{
+        left: 67%;
+        font-size: 15px;
+    }
+}
+.plus:hover{
+    
+    color:var(--main-color);
+    transform: scale(1.1);
+}
+.div-from-js{
+    position:relative;
+    width: 90%;color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.872);
+    margin: 0%;
+    padding: 10px 3px;
+    border-bottom:4px solid rgb(60, 54, 54);
+    transition: var(--main-duration);
+    border-radius: 10px;
+    font-weight:600;
+    font-size:small;
+}
+.div-from-js:hover{
+    border-bottom: 4px solid red ;
+} 
+#lis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 0%;
+    /* border:1pt solid black;*/ position: absolute;top:22% ; 
+  
+}   
+#def{
+  position:relative;
+  left: 40%;
+  bottom:37px;
+  cursor: pointer;
+  transition: var(--main-duration);
+  font-size: 23px;
+  color: #282a31;
+  
+  
+}
+#def:hover{
+    transform: scale(1.3);
+    color: red;
+}
+
+#tic{
+    transition: var(--main-duration);
+    cursor: pointer;
+    color: #282a31;
+    font-weight: 900;
+    font-size: 25px;
+    position:relative;
+    left: 30%;
+    bottom:69px;
+}
+#tic:hover{
+    transform: scale(1.3);
+    color: #0ce90c;
+    
+}
+.strike{
+text-decoration: line-through;
+text-decoration-color: #0ce90c;
+text-decoration-thickness: 2px;
+text-decoration-style:solid;
+transition: var(--main-duration) !important;
+border-color: #0ce90c;
+}
+.strike:hover{
+        border-color: #0ce90c;
+}
