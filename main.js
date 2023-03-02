@@ -24,6 +24,10 @@ add= () =>{
 
      input.value="";
 
+        //set local storage
+        localStorage.setItem('myData',text);
+         
+
      tic.addEventListener('click',function(){
         if(newdiv.classList.contains("strike")){
            
@@ -31,6 +35,8 @@ add= () =>{
         }
         else{
          newdiv.classList.add('strike')}
+         let data = localStorage.getItem('myData');
+            console.log(data);
     })
      remove.addEventListener('click',function(){
         list.removeChild(newdiv)

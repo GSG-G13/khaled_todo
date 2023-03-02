@@ -155,16 +155,16 @@ path {
 }
 #tic:hover{
     transform: scale(1.3);
-    color: #0ce90c;
+    color: var(--third-color);
 }
 .strike{
 text-decoration: line-through;
-text-decoration-color: #0ce90c;
+text-decoration-color: var(--third-color);
 text-decoration-thickness: 2px;
 text-decoration-style:solid;
 transition: var(--main-duration) !important;
-border-color: #0ce90c;
+border-color: var(--third-color);
 }
 .strike:hover{
-        border-color: #0ce90c;
+        border-color: var(--third-color);
 }

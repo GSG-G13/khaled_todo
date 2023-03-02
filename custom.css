@@ -2,6 +2,7 @@
 :root {
     --main-color: rgb(83 146 198);
     --secondary-color: rgb(80 79 79);
+    --third-color:#0ce90c;
     --main-duration: 0.8s ease;  
     }
     /* End Variables */
